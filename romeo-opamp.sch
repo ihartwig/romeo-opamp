@@ -1,0 +1,535 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:romeo-opamp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "romeo-opamp"
+Date "2020-04-10"
+Rev "P1"
+Comp ""
+Comment1 "Ian Hartwig"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P1
+U 1 1 5E90E25B
+P 3800 2500
+F 0 "P1" H 3800 2700 50  0000 C CNN
+F 1 "CONN_01X03" V 3900 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3800 2500 50  0001 C CNN
+F 3 "" H 3800 2500 50  0000 C CNN
+	1    3800 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 5E90E296
+P 3800 4700
+F 0 "P2" H 3800 4900 50  0000 C CNN
+F 1 "CONN_01X03" V 3900 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3800 4700 50  0001 C CNN
+F 3 "" H 3800 4700 50  0000 C CNN
+	1    3800 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 5E90E2B7
+P 8100 2500
+F 0 "P3" H 8100 2700 50  0000 C CNN
+F 1 "CONN_01X03" V 8200 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8100 2500 50  0001 C CNN
+F 3 "" H 8100 2500 50  0000 C CNN
+	1    8100 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 5E90E2EB
+P 8100 4700
+F 0 "P4" H 8100 4900 50  0000 C CNN
+F 1 "CONN_01X03" V 8200 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8100 4700 50  0001 C CNN
+F 3 "" H 8100 4700 50  0000 C CNN
+	1    8100 4700
+	1    0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5E90E326
+P 4950 2500
+F 0 "R3" V 5030 2500 50  0000 C CNN
+F 1 "0R15" V 4950 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4880 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0000 C CNN
+	1    4950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L LM358N U1
+U 1 1 5E90E657
+P 6800 2500
+F 0 "U1" H 6750 2700 50  0000 L CNN
+F 1 "LMV358-N" H 6750 2250 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 6800 2500 50  0001 C CNN
+F 3 "" H 6800 2500 50  0000 C CNN
+	1    6800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358N U1
+U 2 1 5E90E68E
+P 6800 4700
+F 0 "U1" H 6750 4900 50  0000 L CNN
+F 1 "LMV358-N" H 6750 4450 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 6800 4700 50  0001 C CNN
+F 3 "" H 6800 4700 50  0000 C CNN
+	2    6800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 5E90E9AF
+P 5900 2600
+F 0 "R5" H 5930 2620 50  0000 L CNN
+F 1 "10k" H 5930 2560 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5900 2600 50  0001 C CNN
+F 3 "" H 5900 2600 50  0000 C CNN
+	1    5900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 5E90E9F8
+P 5900 2900
+F 0 "R6" H 5930 2920 50  0000 L CNN
+F 1 "1k" H 5930 2860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5900 2900 50  0001 C CNN
+F 3 "" H 5900 2900 50  0000 C CNN
+	1    5900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5E90EB66
+P 4200 3100
+F 0 "#PWR1" H 4200 2850 50  0001 C CNN
+F 1 "GND" H 4200 2950 50  0000 C CNN
+F 2 "" H 4200 3100 50  0000 C CNN
+F 3 "" H 4200 3100 50  0000 C CNN
+	1    4200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2600 4100 2600
+Wire Wire Line
+	4100 2600 4100 3050
+$Comp
+L +5V #PWR3
+U 1 1 5E90EBC2
+P 4700 2000
+F 0 "#PWR3" H 4700 1850 50  0001 C CNN
+F 1 "+5V" H 4700 2140 50  0000 C CNN
+F 2 "" H 4700 2000 50  0000 C CNN
+F 3 "" H 4700 2000 50  0000 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 5E90EC80
+P 6700 1600
+F 0 "#PWR7" H 6700 1450 50  0001 C CNN
+F 1 "+5V" H 6700 1740 50  0000 C CNN
+F 2 "" H 6700 1600 50  0000 C CNN
+F 3 "" H 6700 1600 50  0000 C CNN
+	1    6700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1600 6700 2200
+$Comp
+L GND #PWR5
+U 1 1 5E90ECCC
+P 5900 3100
+F 0 "#PWR5" H 5900 2850 50  0001 C CNN
+F 1 "GND" H 5900 2950 50  0000 C CNN
+F 2 "" H 5900 3100 50  0000 C CNN
+F 3 "" H 5900 3100 50  0000 C CNN
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR10
+U 1 1 5E90EDA8
+P 7800 2200
+F 0 "#PWR10" H 7800 2050 50  0001 C CNN
+F 1 "+5V" H 7800 2340 50  0000 C CNN
+F 2 "" H 7800 2200 50  0000 C CNN
+F 3 "" H 7800 2200 50  0000 C CNN
+	1    7800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2200 7800 2500
+Wire Wire Line
+	7800 2500 7900 2500
+$Comp
+L GND #PWR11
+U 1 1 5E90EDE7
+P 7800 2800
+F 0 "#PWR11" H 7800 2550 50  0001 C CNN
+F 1 "GND" H 7800 2650 50  0000 C CNN
+F 2 "" H 7800 2800 50  0000 C CNN
+F 3 "" H 7800 2800 50  0000 C CNN
+	1    7800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2800 7800 2600
+Wire Wire Line
+	7800 2600 7900 2600
+Wire Wire Line
+	5900 2700 5900 2800
+Connection ~ 5900 2750
+$Comp
+L C_Small C1
+U 1 1 5E90EE99
+P 4200 2900
+F 0 "C1" H 4210 2970 50  0000 L CNN
+F 1 "dnp" H 4210 2820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4200 2900 50  0001 C CNN
+F 3 "" H 4200 2900 50  0000 C CNN
+	1    4200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5E90EF21
+P 4700 2200
+F 0 "R1" H 4730 2220 50  0000 L CNN
+F 1 "dnp_0" H 4730 2160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4700 2200 50  0001 C CNN
+F 3 "" H 4700 2200 50  0000 C CNN
+	1    4700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3000 5900 3100
+Wire Wire Line
+	5900 2500 5900 2150
+Wire Wire Line
+	5900 2150 7200 2150
+Wire Wire Line
+	7200 2150 7200 2500
+Wire Wire Line
+	7200 2500 7100 2500
+Wire Wire Line
+	7900 2400 7200 2400
+Connection ~ 7200 2400
+Wire Wire Line
+	5900 3050 6700 3050
+Wire Wire Line
+	6700 3050 6700 2800
+Connection ~ 5900 3050
+Wire Wire Line
+	5900 2750 6100 2750
+Wire Wire Line
+	6100 2750 6100 2600
+Wire Wire Line
+	6100 2600 6500 2600
+Wire Wire Line
+	4000 2400 6500 2400
+Wire Wire Line
+	4700 2300 4700 2500
+Wire Wire Line
+	4700 2100 4700 2000
+Wire Wire Line
+	5100 2500 5200 2500
+Wire Wire Line
+	5200 2500 5200 2400
+Connection ~ 5200 2400
+Wire Wire Line
+	4200 3000 4200 3100
+Wire Wire Line
+	4100 3050 4200 3050
+Connection ~ 4200 3050
+Text Label 6100 2150 0    60   ~ 0
+SIG0_OUT
+Text Label 6100 2400 0    60   ~ 0
+SIG0_IN
+Text Label 6100 2600 0    60   ~ 0
+SIG0_FB
+Text Label 4250 2500 0    60   ~ 0
+SIG0_PWR
+Text Notes 8350 2550 0    60   ~ 0
+SIG0 Out (to ADC)
+Text Notes 8350 4750 0    60   ~ 0
+SIG1 Out (to ADC)
+$Comp
+L R R4
+U 1 1 5E90FB00
+P 4950 4700
+F 0 "R4" V 5030 4700 50  0000 C CNN
+F 1 "0R15" V 4950 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4880 4700 50  0001 C CNN
+F 3 "" H 4950 4700 50  0000 C CNN
+	1    4950 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 5E90FB06
+P 5900 4800
+F 0 "R7" H 5930 4820 50  0000 L CNN
+F 1 "10k" H 5930 4760 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5900 4800 50  0001 C CNN
+F 3 "" H 5900 4800 50  0000 C CNN
+	1    5900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 5E90FB0C
+P 5900 5100
+F 0 "R8" H 5930 5120 50  0000 L CNN
+F 1 "1k" H 5930 5060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5900 5100 50  0001 C CNN
+F 3 "" H 5900 5100 50  0000 C CNN
+	1    5900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5E90FB12
+P 4200 5300
+F 0 "#PWR2" H 4200 5050 50  0001 C CNN
+F 1 "GND" H 4200 5150 50  0000 C CNN
+F 2 "" H 4200 5300 50  0000 C CNN
+F 3 "" H 4200 5300 50  0000 C CNN
+	1    4200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4800 4100 4800
+Wire Wire Line
+	4100 4800 4100 5250
+$Comp
+L +5V #PWR4
+U 1 1 5E90FB1A
+P 4700 4200
+F 0 "#PWR4" H 4700 4050 50  0001 C CNN
+F 1 "+5V" H 4700 4340 50  0000 C CNN
+F 2 "" H 4700 4200 50  0000 C CNN
+F 3 "" H 4700 4200 50  0000 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5E90FB24
+P 5900 5300
+F 0 "#PWR6" H 5900 5050 50  0001 C CNN
+F 1 "GND" H 5900 5150 50  0000 C CNN
+F 2 "" H 5900 5300 50  0000 C CNN
+F 3 "" H 5900 5300 50  0000 C CNN
+	1    5900 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4900 5900 5000
+Connection ~ 5900 4950
+$Comp
+L C_Small C2
+U 1 1 5E90FB2D
+P 4200 5100
+F 0 "C2" H 4210 5170 50  0000 L CNN
+F 1 "dnp" H 4210 5020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4200 5100 50  0001 C CNN
+F 3 "" H 4200 5100 50  0000 C CNN
+	1    4200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5E90FB33
+P 4700 4400
+F 0 "R2" H 4730 4420 50  0000 L CNN
+F 1 "dnp_0" H 4730 4360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4700 4400 50  0001 C CNN
+F 3 "" H 4700 4400 50  0000 C CNN
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5200 5900 5300
+Wire Wire Line
+	5900 4700 5900 4350
+Wire Wire Line
+	5900 4350 7200 4350
+Wire Wire Line
+	5900 5250 6700 5250
+Connection ~ 5900 5250
+Wire Wire Line
+	5900 4950 6100 4950
+Wire Wire Line
+	6100 4950 6100 4800
+Wire Wire Line
+	6100 4800 6500 4800
+Wire Wire Line
+	4000 4600 6500 4600
+Wire Wire Line
+	4700 4300 4700 4200
+Wire Wire Line
+	5100 4700 5200 4700
+Wire Wire Line
+	5200 4700 5200 4600
+Connection ~ 5200 4600
+Wire Wire Line
+	4200 5200 4200 5300
+Wire Wire Line
+	4100 5250 4200 5250
+Connection ~ 4200 5250
+Text Label 6100 4350 0    60   ~ 0
+SIG1_OUT
+Text Label 6100 4600 0    60   ~ 0
+SIG1_IN
+Text Label 6100 4800 0    60   ~ 0
+SIG1_FB
+Text Label 4250 4700 0    60   ~ 0
+SIG1_PWR
+$Comp
+L +5V #PWR12
+U 1 1 5E90FC0C
+P 7800 4400
+F 0 "#PWR12" H 7800 4250 50  0001 C CNN
+F 1 "+5V" H 7800 4540 50  0000 C CNN
+F 2 "" H 7800 4400 50  0000 C CNN
+F 3 "" H 7800 4400 50  0000 C CNN
+	1    7800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4400 7800 4700
+Wire Wire Line
+	7800 4700 7900 4700
+$Comp
+L GND #PWR13
+U 1 1 5E90FC14
+P 7800 5000
+F 0 "#PWR13" H 7800 4750 50  0001 C CNN
+F 1 "GND" H 7800 4850 50  0000 C CNN
+F 2 "" H 7800 5000 50  0000 C CNN
+F 3 "" H 7800 5000 50  0000 C CNN
+	1    7800 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5000 7800 4800
+Wire Wire Line
+	7800 4800 7900 4800
+Wire Wire Line
+	7200 4350 7200 4700
+Wire Wire Line
+	7200 4700 7100 4700
+Wire Wire Line
+	7900 4600 7200 4600
+Connection ~ 7200 4600
+Wire Wire Line
+	6700 5250 6700 5000
+Text Notes 3250 4750 0    60   ~ 0
+SIG1 In
+Text Notes 3250 2550 0    60   ~ 0
+SIG0 In
+Wire Wire Line
+	4000 2500 4800 2500
+Connection ~ 4700 2500
+Wire Wire Line
+	4200 2400 4200 2800
+Connection ~ 4200 2400
+Wire Wire Line
+	4000 4700 4800 4700
+Wire Wire Line
+	4700 4500 4700 4700
+Connection ~ 4700 4700
+Wire Wire Line
+	4200 5000 4200 4600
+Connection ~ 4200 4600
+Text Notes 3250 1500 0    60   ~ 0
+Non-inverting Opamp:\nSIG0 gain = 1 + R5/R6\n\nTo use as...\nLow-side Current Shunt: pop R3, depop R1\nSingle-ended amp: depop R3, optionally pop R1 for power\nOptionally pop C1 for filtering.
+$Comp
+L C_Small C3
+U 1 1 5E9125BE
+P 7000 1800
+F 0 "C3" H 7010 1870 50  0000 L CNN
+F 1 "0.1uF" H 7010 1720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7000 1800 50  0001 C CNN
+F 3 "" H 7000 1800 50  0000 C CNN
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 5E912696
+P 7000 1950
+F 0 "#PWR9" H 7000 1700 50  0001 C CNN
+F 1 "GND" H 7000 1800 50  0000 C CNN
+F 2 "" H 7000 1950 50  0000 C CNN
+F 3 "" H 7000 1950 50  0000 C CNN
+	1    7000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1950 7000 1900
+Wire Wire Line
+	7000 1700 7000 1650
+Wire Wire Line
+	7000 1650 6700 1650
+Connection ~ 6700 1650
+$Comp
+L +5V #PWR8
+U 1 1 5E9127E3
+P 6700 4200
+F 0 "#PWR8" H 6700 4050 50  0001 C CNN
+F 1 "+5V" H 6700 4340 50  0000 C CNN
+F 2 "" H 6700 4200 50  0000 C CNN
+F 3 "" H 6700 4200 50  0000 C CNN
+	1    6700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4200 6700 4400
+$EndSCHEMATC
